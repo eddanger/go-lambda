@@ -11,7 +11,7 @@ import (
 // is processed, it returns an Amazon API Gateway response object to AWS Lambda
 func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
-	index, err := ioutil.ReadFile("public/index.html")
+	index, err := ioutil.ReadFile("public/amazing.html")
 	if err != nil {
 		return events.APIGatewayProxyResponse{}, err
 	}
